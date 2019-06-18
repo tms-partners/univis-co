@@ -75,9 +75,8 @@
                         <img class="uk-margin uk-margin-remove" src="<?php bloginfo('template_directory'); ?>/img/logo.png" width="90" height="30" alt="ユニヴィスグループ">
                     </a>
                     <ul class="uk-navbar-flip uk-navbar-nav uk-hidden-small">
-                        <li class="uk-parent" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false"><a href="/service">サービス</a>
-                         <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-autoflip uk-dropdown-top" aria-hidden="true" style="top: 10px; left: 0px;  position: fixed; width: 100vw; height:100px; background-color: rgb(0,0,0,0);">
-							<div class="tms-uk-dropdown-wrapper">
+                        <li class="uk-parent fix-header" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false">
+                        <a href="/service">サービス</a>
                             <ul class="uk-nav uk-nav-navbar" >
                                 <li><a href="/service/tax">会計・税務顧問/申告書作成・節税支援​</a></li>
                                 <li><a href="/service/ma">M&Aアドバイザリー​</a></li>
@@ -91,12 +90,9 @@
                                 <li><a href="/service/audit">会計監査</a></li>
                                 <li><a href="/service/subsidy">助成金・補助金申請​</a></li>
                             </ul>
-                            </div>
-						</div>
                         </li>
-                        <li class="uk-parent" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false"><a href="/about">会社概要</a>
-						<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-autoflip uk-dropdown-top" aria-hidden="true" style="top: 10px; left: 0px;  position: fixed; width: 100vw; height:100px; background-color: rgb(0,0,0,0);">
-							<div class="tms-uk-dropdown-wrapper">
+                        <li class="uk-parent fix-header" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false">
+                        <a href="/about">会社概要</a>
 								<ul class="uk-nav uk-nav-navbar">
 								 <li><a href="/about/company">会社概要​</a></li>
 								<li><a href="/about/business">事業内容​</a></li>
@@ -104,13 +100,9 @@
 								<li><a href="/about/member">メンバープロフィール​</a></li>
 								<li><a href="/about/access">アクセス</a></li>
 								</ul>
-							</div>
-						</div>
-							
                         </li>
-                        <li class="uk-parent" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false"><a href="/recruit">リクルート</a>
-                        <div class="uk-dropdown uk-dropdown-navbar uk-dropdown-autoflip uk-dropdown-top" aria-hidden="true" style="top: 10px; left: 0px;  position: fixed; width: 100vw; height:100px; background-color: rgb(0,0,0,0);">
-							<div class="tms-uk-dropdown-wrapper">
+                        <li class="uk-parent fix-header" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false">
+                        <a href="/recruit">リクルート</a>
                             <ul class="uk-nav uk-nav-navbar">
                                 <li><a href="/recruit/what">ユニヴィスとは？</a></li>
                                 <li><a href="/recruit/members">メンバー紹介</a></li>
@@ -118,23 +110,18 @@
                                 <li><a href="/recruit/faq">よくあるご質問</a></li>
                                 <li><a href="/recruit/recruitment">募集要項</a></li>
                             </ul>
-							</div>
-                        </div>
                         </li>
-                        <li class="uk-parent" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false"><a href="/faq">よくあるご質問</a>
-                            						<div class="uk-dropdown uk-dropdown-navbar uk-dropdown-autoflip uk-dropdown-top" aria-hidden="true" style="top: 10px; left: 0px;  position: fixed; width: 100vw; height:100px; background-color: rgb(0,0,0,0);">
-							
-							<div class="tms-uk-dropdown-wrapper">
+                        <li class="uk-parent fix-header" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false">
+                        <a href="/faq">よくあるご質問</a>
                             <ul class="uk-nav uk-nav-navbar">
                             <li><a href="/faq/service">サービスについて</a></li>
                             <li><a href="/faq/univis">ユニヴィスについて</a></li>
                             <li><a href="/recruit/faq">リクルートについて</a></li>
                             <li><a href="/faq/others">その他</a></li>
                         </ul>
-						</div>
-                    </div>
                         </li>
-                        <li class="uk-parent" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false"><a href="/news">News</a></li>
+                        <li class="uk-parent fix-header" data-uk-dropdown="#" aria-haspopup="true" aria-expanded="false">
+                        <a href="/news">News</a></li>
                         <li><a href="/contact">お問い合わせ</a></li>
                     </ul>
                 </div>
