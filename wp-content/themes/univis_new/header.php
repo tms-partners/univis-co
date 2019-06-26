@@ -9,6 +9,7 @@
         <meta name="description" content="ユニヴィスグループは、公認会計士・税理士を中心としたプロフェッショナル集団です。会計、税務、ファイナンスのプロフェッショナルとして、クライアントの様々な課題を解決することをお約束します。また、私たちは、クライアント及び関係する全ての人々の成長・繁栄を考え、皆さまとともにチャレンジしていく、最良のパートナーであり続けます。">
 
         <?php wp_head(); ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/stylesheets/main.css"  />
     </head>
     <body>
         <div id="tm-offcanvas" class="uk-offcanvas">

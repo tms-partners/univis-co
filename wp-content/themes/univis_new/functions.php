@@ -91,3 +91,5 @@ function is_subpage() {
         return false; // false を返します
     };
 };
+
+add_theme_support('post-thumbnails');

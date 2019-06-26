@@ -1,0 +1,240 @@
+@import "common";
+
+.Service {
+  h1 {
+    border: none;
+    padding: 15px 0 40px;
+    @include display-flex;
+    @include justify-content(flex-start);
+    @include align-items(center);
+    border-bottom: 2px solid #E1E1E1;
+    margin-bottom: 40px;
+    &:before {
+      content: '';
+      width: 3px;
+      height: 80px;
+      margin-right: 15px;
+      background-color: #BE1816;
+      display: block;
+    }
+  }
+  &__eyecatch {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__body {
+    background-color: #FBFBFB;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .Relate {
+    &__list {
+      list-style: none;
+      padding: 0;
+      &__box {
+        margin-bottom: 20px;
+        a {
+          @include display-flex;
+          @include justify-content(flex-start);
+          @include align-items(center);
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+
+        &__img {
+          width: 150px;
+          height: 100px;
+          background-color: #FBFBFB;
+
+          &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        &__text {
+          width: calc(100% - 150px);
+          height: 100px;
+          @include display-flex;
+          @include justify-content(flex-start);
+          @include align-items(center);
+          background-color: #D3D2D3;
+          @include box-sizing(border-box);
+          padding: 10px;
+          &__title {
+            margin: 0;
+          }
+
+        }
+      }
+    }
+  }
+  .Introduction-wrapper {
+    &-head {
+      border: none;
+      padding: 15px 0 20px;
+      @include display-flex;
+      @include justify-content(flex-start);
+      @include align-items(center);
+      border-bottom: 2px solid #E1E1E1;
+      margin-bottom: 20px;
+      &:before {
+        content: '';
+        width: 3px;
+        height: 40px;
+        margin-right: 15px;
+        background-color: #BE1816;
+        display: block;
+      }
+    }
+    .Introductions {
+      .Introduction {
+        &__fv {
+          position: relative;
+          margin-bottom: 20px;
+          &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          &__name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            margin: 0;
+            width: 100%;
+            padding: 15px;
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            font-size: 24px;
+          }
+        }
+        &__body {
+          background-color: #FBFBFB;
+          padding: 20px;
+          position: relative;
+          &__content {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+          }
+          &__show {
+            position: absolute;
+            bottom: 10px;
+            left: calc( 50% - 50px);
+            display: inline-block;
+            text-align: center;
+            &__arrow {
+              display: inline-block;
+              letter-spacing: -5px;
+              -moz-transform:    rotate( 90deg );  /* Firefox用 */
+              -webkit-transform: rotate( 90deg );  /* Chrome,Safari,新しいOpera用 */
+              -o-transform:      rotate( 90deg );  /* 古いOpera用 */
+              -ms-transform:     rotate( 90deg );  /* IE9用 */
+              transform:         rotate( 90deg );  /* CSS3の書き方 */
+            }
+          }
+          &__head {
+            border: none;
+            padding: 10px 0 10px;
+            @include display-flex;
+            @include justify-content(flex-start);
+            @include align-items(center);
+            margin-bottom: 20px;
+            &:before {
+              content: '';
+              width: 3px;
+              height: 30px;
+              margin-right: 10px;
+              background-color: #BE1816;
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.ServiceSide {
+  margin-bottom: 40px;
+  .Columns {
+    .Column {
+      display: block;
+      width: 100%;
+      height: 150px;
+      background-color: #FBFBFB;
+      position: relative;
+      margin-bottom: 20px;
+      &:hover {
+        opacity: 0.6;
+      }
+      &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      &__title {
+        font-size: 14px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px;
+        background-color: #5990DC;
+        color: white;
+        width: 100%;
+        margin-bottom: 0;
+      }
+    }
+  }
+  ul.menu {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    & > li {
+      padding: 0;
+      text-align: left;
+      & > a {
+        padding: 10px;
+        background-color: #92CF48;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &:after {
+          content: '+';
+          color: white;
+          font-size: 24px;
+        }
+      }
+      &.is-open {
+        & > a {
+          &:after {
+            content: '-';
+          }
+        }
+        ul {
+          display: block;
+        }
+      }
+      ul {
+        list-style: disc;
+        background-color: #FBFBFB;
+        display: none;
+        li {
+          a {
+            padding: 10px;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

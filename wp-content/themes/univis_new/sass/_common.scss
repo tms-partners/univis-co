@@ -1,0 +1,63 @@
+/*common.scss*/
+
+@import "compass";
+
+$window-max-width:1500px;
+$window-long-width:1020px;
+$window-base-width:1020px;
+$window-header-width: 1020px;
+$window-bottom-change:1140px;
+$window-middle-width:1000px;
+$mobile-base-width:100%;
+$window-main-width: 850px;
+
+$breakpoint-header-res: 1300px;
+$breakpoint-pc-res: 1250px;
+$breakpoint-tablet: 1040px;
+$breakpoint-mobile: 1040px;
+$breakpoint-mobile-min: 768px;
+$breakpoint-smart: 420px;
+$breakpoint-5s: 340px;
+
+$base-color: #579ff1;
+$base-thin-color: #E9E5DA;
+$base-h-color: #393F4C;
+$base-font-color:#333;
+$base-font-black-color:#535353;
+$base-font-black-thin-color:#656565;
+$base-btn-color:#434343;
+$base-btn-black-color:#004280;
+$base-border-color: #95989A;
+$base-line-height:1.4;
+$base-hover-btn-color: #FFAC0F;
+$base-blue-color: #00ABC8;
+$base-orange-color: #F48132;
+$base-green-color: #87c88f;
+$base-yellow-color: #efe08d;
+
+/*css調整*/
+
+@mixin max-screen($break-point) {
+  @media screen and (max-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin min-screen($break-point) {
+  @media screen and (min-width: $break-point) {
+    @content;
+  }
+}
+
+@mixin screen($break-point-min, $break-point-max) {
+  @media screen and (min-width: $break-point-min) and (max-width: $break-point-max) {
+    @content;
+  }
+}
+
+@mixin lineHeight($size) {
+  line-height: $size;
+  @media all and (-ms-high-contrast:none) {
+    line-height: $size + 10;
+  }
+}

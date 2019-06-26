@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/*common.scss*/
+/*css調整*/
+/* line 4, ../sass/main.scss */
+.Service h1 {
+  border: none;
+  padding: 15px 0 40px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  border-bottom: 2px solid #E1E1E1;
+  margin-bottom: 40px;
+}
+/* line 12, ../sass/main.scss */
+.Service h1:before {
+  content: '';
+  width: 3px;
+  height: 80px;
+  margin-right: 15px;
+  background-color: #BE1816;
+  display: block;
+}
+/* line 21, ../sass/main.scss */
+.Service__eyecatch {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+/* line 25, ../sass/main.scss */
+.Service__eyecatch img {
+  width: 100%;
+  height: auto;
+}
+/* line 30, ../sass/main.scss */
+.Service__body {
+  background-color: #FBFBFB;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+/* line 36, ../sass/main.scss */
+.Service .Relate__list {
+  list-style: none;
+  padding: 0;
+}
+/* line 39, ../sass/main.scss */
+.Service .Relate__list__box {
+  margin-bottom: 20px;
+}
+/* line 41, ../sass/main.scss */
+.Service .Relate__list__box a {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+}
+/* line 45, ../sass/main.scss */
+.Service .Relate__list__box a:hover {
+  opacity: 0.6;
+}
+/* line 50, ../sass/main.scss */
+.Service .Relate__list__box__img {
+  width: 150px;
+  height: 100px;
+  background-color: #FBFBFB;
+}
+/* line 55, ../sass/main.scss */
+.Service .Relate__list__box__img__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 62, ../sass/main.scss */
+.Service .Relate__list__box__text {
+  width: calc(100% - 150px);
+  height: 100px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #D3D2D3;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+/* line 71, ../sass/main.scss */
+.Service .Relate__list__box__text__title {
+  margin: 0;
+}
+/* line 80, ../sass/main.scss */
+.Service .Introduction-wrapper-head {
+  border: none;
+  padding: 15px 0 20px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  border-bottom: 2px solid #E1E1E1;
+  margin-bottom: 20px;
+}
+/* line 88, ../sass/main.scss */
+.Service .Introduction-wrapper-head:before {
+  content: '';
+  width: 3px;
+  height: 40px;
+  margin-right: 15px;
+  background-color: #BE1816;
+  display: block;
+}
+/* line 99, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__fv {
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 102, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__fv__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 107, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__fv__name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 24px;
+}
+/* line 119, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__body {
+  background-color: #FBFBFB;
+  padding: 20px;
+  position: relative;
+}
+/* line 123, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__body__content {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 128, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__body__show {
+  position: absolute;
+  bottom: 10px;
+  left: calc( 50% - 50px);
+  display: inline-block;
+  text-align: center;
+}
+/* line 134, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__body__show__arrow {
+  display: inline-block;
+  letter-spacing: -5px;
+  -moz-transform: rotate(90deg);
+  /* Firefox用 */
+  -webkit-transform: rotate(90deg);
+  /* Chrome,Safari,新しいOpera用 */
+  -o-transform: rotate(90deg);
+  /* 古いOpera用 */
+  -ms-transform: rotate(90deg);
+  /* IE9用 */
+  transform: rotate(90deg);
+  /* CSS3の書き方 */
+}
+/* line 144, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__body__head {
+  border: none;
+  padding: 10px 0 10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+/* line 151, ../sass/main.scss */
+.Service .Introduction-wrapper .Introductions .Introduction__body__head:before {
+  content: '';
+  width: 3px;
+  height: 30px;
+  margin-right: 10px;
+  background-color: #BE1816;
+  display: block;
+}
+
+/* line 167, ../sass/main.scss */
+.ServiceSide {
+  margin-bottom: 40px;
+}
+/* line 170, ../sass/main.scss */
+.ServiceSide .Columns .Column {
+  display: block;
+  width: 100%;
+  height: 150px;
+  background-color: #FBFBFB;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 177, ../sass/main.scss */
+.ServiceSide .Columns .Column:hover {
+  opacity: 0.6;
+}
+/* line 180, ../sass/main.scss */
+.ServiceSide .Columns .Column__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* line 185, ../sass/main.scss */
+.ServiceSide .Columns .Column__title {
+  font-size: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background-color: #5990DC;
+  color: white;
+  width: 100%;
+  margin-bottom: 0;
+}
+/* line 198, ../sass/main.scss */
+.ServiceSide ul.menu {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+}
+/* line 202, ../sass/main.scss */
+.ServiceSide ul.menu > li {
+  padding: 0;
+  text-align: left;
+}
+/* line 205, ../sass/main.scss */
+.ServiceSide ul.menu > li > a {
+  padding: 10px;
+  background-color: #92CF48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 211, ../sass/main.scss */
+.ServiceSide ul.menu > li > a:after {
+  content: '+';
+  color: white;
+  font-size: 24px;
+}
+/* line 219, ../sass/main.scss */
+.ServiceSide ul.menu > li.is-open > a:after {
+  content: '-';
+}
+/* line 223, ../sass/main.scss */
+.ServiceSide ul.menu > li.is-open ul {
+  display: block;
+}
+/* line 227, ../sass/main.scss */
+.ServiceSide ul.menu > li ul {
+  list-style: disc;
+  background-color: #FBFBFB;
+  display: none;
+}
+/* line 232, ../sass/main.scss */
+.ServiceSide ul.menu > li ul li a {
+  padding: 10px;
+  display: block;
+}
