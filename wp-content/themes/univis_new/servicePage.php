@@ -87,4 +87,12 @@ Template Name: サービスページ下層用テンプレート
             </div>
         </div>
     </div>
+    <script type="text/javascript">
+        function show() {
+            var show = document.getElementById("showMore");
+            var inroduction = document.getElementById("introductionContent");
+            show.style.display = 'none';
+            inroduction.style.height = 'auto';
+        }
+    </script>
 <?php get_footer(); ?>
