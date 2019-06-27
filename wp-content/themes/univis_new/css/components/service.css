@@ -68,13 +68,21 @@
   height: 100px;
   background-color: #FBFBFB;
 }
-/* line 55, ../sass/main.scss */
+@media screen and (max-width: 767px) {
+  /* line 50, ../sass/main.scss */
+  .Service .Relate__list__box__img {
+    width: 25vw;
+    height: 25vw;
+    background-color: black;
+  }
+}
+/* line 60, ../sass/main.scss */
 .Service .Relate__list__box__img__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 62, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .Service .Relate__list__box__text {
   width: calc(100% - 150px);
   height: 100px;
@@ -90,11 +98,22 @@
   box-sizing: border-box;
   padding: 10px;
 }
-/* line 71, ../sass/main.scss */
+@media screen and (max-width: 767px) {
+  /* line 67, ../sass/main.scss */
+  .Service .Relate__list__box__text {
+    width: 75vw;
+    height: 25vw;
+  }
+  /* line 79, ../sass/main.scss */
+  .Service .Relate__list__box__text h3 {
+    font-size: 14px;
+  }
+}
+/* line 83, ../sass/main.scss */
 .Service .Relate__list__box__text__title {
   margin: 0;
 }
-/* line 80, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .Service .Introduction-wrapper-head {
   border: none;
   padding: 15px 0 20px;
@@ -107,7 +126,7 @@
   border-bottom: 2px solid #E1E1E1;
   margin-bottom: 20px;
 }
-/* line 88, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .Service .Introduction-wrapper-head:before {
   content: '';
   width: 3px;
@@ -116,18 +135,18 @@
   background-color: #BE1816;
   display: block;
 }
-/* line 99, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__fv {
   position: relative;
   margin-bottom: 20px;
 }
-/* line 102, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__fv__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 107, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__fv__name {
   position: absolute;
   bottom: 0;
@@ -139,19 +158,19 @@
   color: white;
   font-size: 24px;
 }
-/* line 119, ../sass/main.scss */
+/* line 131, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__body {
   background-color: #FBFBFB;
   padding: 20px;
   position: relative;
 }
-/* line 123, ../sass/main.scss */
+/* line 135, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__body__content {
   height: 200px;
   overflow: hidden;
   position: relative;
 }
-/* line 128, ../sass/main.scss */
+/* line 140, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__body__show {
   position: absolute;
   bottom: 10px;
@@ -159,7 +178,7 @@
   display: inline-block;
   text-align: center;
 }
-/* line 134, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__body__show__arrow {
   display: inline-block;
   letter-spacing: -5px;
@@ -174,7 +193,7 @@
   transform: rotate(90deg);
   /* CSS3の書き方 */
 }
-/* line 144, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__body__head {
   border: none;
   padding: 10px 0 10px;
@@ -186,7 +205,7 @@
   align-items: center;
   margin-bottom: 20px;
 }
-/* line 151, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 .Service .Introduction-wrapper .Introductions .Introduction__body__head:before {
   content: '';
   width: 3px;
@@ -196,11 +215,11 @@
   display: block;
 }
 
-/* line 167, ../sass/main.scss */
+/* line 179, ../sass/main.scss */
 .ServiceSide {
   margin-bottom: 40px;
 }
-/* line 170, ../sass/main.scss */
+/* line 182, ../sass/main.scss */
 .ServiceSide .Columns .Column {
   display: block;
   width: 100%;
@@ -209,17 +228,17 @@
   position: relative;
   margin-bottom: 20px;
 }
-/* line 177, ../sass/main.scss */
+/* line 189, ../sass/main.scss */
 .ServiceSide .Columns .Column:hover {
   opacity: 0.6;
 }
-/* line 180, ../sass/main.scss */
+/* line 192, ../sass/main.scss */
 .ServiceSide .Columns .Column__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-/* line 185, ../sass/main.scss */
+/* line 197, ../sass/main.scss */
 .ServiceSide .Columns .Column__title {
   font-size: 14px;
   position: absolute;
@@ -231,18 +250,18 @@
   width: 100%;
   margin-bottom: 0;
 }
-/* line 198, ../sass/main.scss */
+/* line 210, ../sass/main.scss */
 .ServiceSide ul.menu {
   list-style: none;
   width: 100%;
   padding: 0;
 }
-/* line 202, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 .ServiceSide ul.menu > li {
   padding: 0;
   text-align: left;
 }
-/* line 205, ../sass/main.scss */
+/* line 217, ../sass/main.scss */
 .ServiceSide ul.menu > li > a {
   padding: 10px;
   background-color: #92CF48;
@@ -250,27 +269,27 @@
   justify-content: space-between;
   align-items: center;
 }
-/* line 211, ../sass/main.scss */
+/* line 223, ../sass/main.scss */
 .ServiceSide ul.menu > li > a:after {
   content: '+';
   color: white;
   font-size: 24px;
 }
-/* line 219, ../sass/main.scss */
+/* line 231, ../sass/main.scss */
 .ServiceSide ul.menu > li.is-open > a:after {
   content: '-';
 }
-/* line 223, ../sass/main.scss */
+/* line 235, ../sass/main.scss */
 .ServiceSide ul.menu > li.is-open ul {
   display: block;
 }
-/* line 227, ../sass/main.scss */
+/* line 239, ../sass/main.scss */
 .ServiceSide ul.menu > li ul {
   list-style: disc;
   background-color: #FBFBFB;
   display: none;
 }
-/* line 232, ../sass/main.scss */
+/* line 244, ../sass/main.scss */
 .ServiceSide ul.menu > li ul li a {
   padding: 10px;
   display: block;
