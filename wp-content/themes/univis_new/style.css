@@ -37,7 +37,7 @@ header {
     position: relative;
     padding: 15px 0;
     border: none;
-    
+
 }
 
 
@@ -262,7 +262,7 @@ header {
 /* SERVICE CATEGORY PAGE by TMS partners inc.
  * chatani sota
  * 2019.06.16
- */ 
+ */
 #tms-service-cardbox-wrapper > ul {
 	font-size: 0;
 	padding-left: 0;
@@ -272,6 +272,7 @@ header {
 	background-color: rgb(240,240,240);
 	display: inline-block;
 	vertical-align:  top;
+  min-height: 300px;
 	width: 200px;
 	margin-right: 15px;
 	margin-bottom: 15px;
@@ -279,7 +280,7 @@ header {
 
 #tms-service-cardbox-wrapper > ul > li > div {
 	padding: 15px;
-	
+
 }
 
 #tms-service-cardbox-wrapper > ul > li > div > h4{
@@ -290,6 +291,7 @@ header {
 }
 
 #tms-service-cardbox-wrapper > ul > li > div > p{
+  min-height: 200px;
 	font-size: 12px;
 	text-align: left;
 }
@@ -313,6 +315,18 @@ header {
 	height: 100%;
 }
 
+.tms-service-introduce-button > a{
+	font-size: 14px;
+	color: #fffaf0;
+	display: block;
+	position: absolute;
+	text-align: center;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 .tms-service-hr-mini {
     height: 8px;
 	width: 35px;
@@ -320,7 +334,16 @@ header {
 	text-align: center;
     border: 0;
     border-top: 1px solid #b22222;
-} 
+}
+
+.tms-service-hr-mini {
+    height: 8px;
+	width: 35px;
+	margin: auto;
+	text-align: center;
+    border: 0;
+    border-top: 1px solid #b22222;
+}
 
 #tms-service-head-image {
 	width: 100%;
@@ -388,7 +411,52 @@ header {
 	padding: 10px;
 }
 
+#tms-service-introduce-box > ul {
+	font-size: 0;
+	padding-left: 0;
+}
 
+#tms-service-introduce-box > ul > li{
+	background-color: rgb(240,240,240);
+	display: inline-block;
+	vertical-align:  top;
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+
+#tms-service-introduce-box > ul > li > a {
+	width: 100%;
+	height: 100%;
+}
+
+#tms-service-introduce-box > ul > li > a > div {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+}
+
+#tms-service-introduce-box > ul > li > a > div > img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#tms-service-introduce-box > ul > li > a > div > p{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	left: 0;
+	margin: auto 0;
+	font-size: 16px;
+	font-weight: 700;
+	text-align: center;
+}
 
 
 
@@ -457,7 +525,7 @@ tspan.percent {
     border-radius: 10px;
 }
 .btn_detail a{
-    display: block;    
+    display: block;
     padding: 20px;
     text-align: center;
     color: #fff;
@@ -493,7 +561,7 @@ footer{
 
 #f_nav h5{
 	color: rgb(150,150,150);
-	font-weight: 800; 
+	font-weight: 800;
     font-size: 18px;
     line-height: 25px;
 	padding: 10px 0 0px 0px;
@@ -660,7 +728,7 @@ span.wpcf7-not-valid-tip,
 /* 主要メンバープロフィール */
 .prof{
 	margin: 50px 0;
-} 
+}
 .prof .position{
 	font-size: 16px;
 	text-align: center;
@@ -713,12 +781,12 @@ span.wpcf7-not-valid-tip,
   margin-bottom: .75em;
   margin-left: 48px;
 }
- 
+
 #sitemap li ul li {
   margin-bottom: .25em;
   position: relative;
 }
- 
+
 #sitemap li ul li::before {
   content: "";
   position: absolute;
@@ -728,11 +796,11 @@ span.wpcf7-not-valid-tip,
   height: calc(100% + .75em);
   border-left: 1px solid #3972b2;
 }
- 
+
 #sitemap li ul li:last-child::before {
   height: calc(1em + .25em);
 }
- 
+
 #sitemap li ul li::after {
   content: "";
   position: absolute;
