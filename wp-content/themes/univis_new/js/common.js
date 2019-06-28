@@ -44,4 +44,12 @@ $(function(){
 	        }
 	    };
 	});
+	// サービスページメニューを開く
+	$(function(){
+		$(".ServiceSide .menu > li").each(function(){
+			$(this).click(function(){
+				$(this).toggleClass("is-open");
+			});
+		});
+	});
 });
