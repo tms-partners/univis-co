@@ -137,15 +137,42 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
 .wpsisac-slick-carousal.design-6 .slick-prev{left:0px !important;}
 .wpsisac-slick-carousal.design-6 .slick-dots{left:15px !important; right:15px; text-align:center;  bottom:0px !important;}
 
+/*TMS partner*/
+.wpsisac-slick-carousal.design-tms{margin-bottom:25px;}
+.wpsisac-slick-carousal.design-tms .slick-image-slide{text-align:center; }
+.wpsisac-slick-carousal.design-tms .slick-image-slide img{display:inline-block !important; }
+.wpsisac-slick-carousal.wpsisac-center .slick-slide .slick-image-slide-wrap {
+    opacity: 0.5;
+    transform: scale(0.7);
+    transition: all 300ms ease 0s;
+}
+.wpsisac-slick-carousal.wpsisac-center .slick-center .slick-image-slide-wrap {
+    opacity: 1;
+    transform: scale(1);
+}
+.wpsisac-center.variablewidthv .slick-image-slide-wrap{ opacity: 1!important;  transform: scale(1) !important;}
+.wpsisac-slick-carousal.design-tms .slick-arrow { top:50% !important; cursor:pointer; -webkit-transform: translateY(-50%);transform: translateY(-50%);}
+.wpsisac-slick-carousal.design-tms .slick-next{right:0px !important;}
+.wpsisac-slick-carousal.design-tms .slick-prev{left:0px !important;}
+.wpsisac-slick-carousal.design-tms .slick-dots{left:15px !important; right:15px; text-align:center;  bottom:0px !important;}
+
+.wpsisac-slick-carousal.design-tms .slick-image-slide .slick-image-slide-wrap .slider-overlay{background:rgba(0,0,0,0.4); position:absolute; left:0; right:0; bottom:0; top:0;}
+.wpsisac-slick-carousal.design-tms .slick-image-slide .slick-image-slide-wrap .slider-content{
+	z-index: 1000;color: #fff;position: absolute; left: 0;text-align: center;width: 80%;	top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);right: 0;margin:0 auto;float: left;}
+.wpsisac-slick-carousal.design-tms .slick-image-slide .slick-image-slide-wrap .slide-title{color:#fff; text-shadow: 0 1px 2px #000;}
+.wpsisac-slick-carousal.design-tms .slick-image-slide .slick-image-slide-wrap .slick-slider-short-content{ text-align:center;}
+.wpsisac-slick-carousal.design-tms .slick-image-slide .slick-image-slide-wrap .slick-slider-short-content p{ text-align:center; font-weight:bold; color:#fff; text-shadow: 0 1px 2px #000; font-size:16px;}
+.wpsisac-slick-carousal.design-tms .addtoany_share_save_container .addtoany_content .addtoany_content_bottom { display:none;}
+
 .slide-wrap .readmore a.slider-readmore{padding:5px 10px; background:rgba(0,0,0,0.8); text-decoration:none !important; color:#fff;border:1px solid #fff; text-transform:uppercase}
 .wpcolumn,
-.wpcolumns {  padding-left: 0.9375em;  padding-right: 0.9375em;   float: left;  width:100%;  
+.wpcolumns {  padding-left: 0.9375em;  padding-right: 0.9375em;   float: left;  width:100%;
   position: relative; }
 
 @media only screen {
   .wpcolumn,  .wpcolumns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em; float: left; }
    }
- @media only screen and (min-width: 40.0625em) {  
+ @media only screen and (min-width: 40.0625em) {
   .wpcolumn,
   .wpcolumns {position: relative;padding-left: 0.9375em;padding-right: 0.9375em;float: left; }
   .wp-medium-1 {    width: 8.33333%; }
@@ -173,8 +200,8 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
   .medium-offset-10 {    margin-left: 83.33333% !important; }
   .medium-offset-11 {    margin-left: 91.66667% !important; }
    }
-   
-@media only screen and (max-width: 40.0625em) {  
+
+@media only screen and (max-width: 40.0625em) {
    .slick-image-slide img{height: 100% !important;width: 100% !important;object-fit: cover;object-position: top center;}
    .slick-image-slide, .slide-wrap{height:350px;}
    .wpsisac-slick-slider.design-5 .slick-image-slide, .wpsisac-slick-slider.design-5  .slide-wrap{height:auto !important;}
@@ -184,6 +211,6 @@ padding:0 !important; margin:0px !important; border-radius:0px !important}
   .wpsisac-slick-slider.design-4 .slick-image-slide .slide-wrap .slider-content-left{padding:20px}
   .wpsisac-slick-carousal .slick-image-slide-wrap, .wpsisac-slick-carousal .slick-image-slide{height:auto !important}
   }
-@media only screen and (max-width: 480px) {   
+@media only screen and (max-width: 480px) {
   .wpsisac-slick-carousal.wpsisac-center .slick-slide .slick-image-slide-wrap { opacity: 1; transform: scale(1); transition: all 300ms ease 0s;}
 }

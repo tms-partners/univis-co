@@ -10,7 +10,7 @@
 if ( !defined( 'ABSPATH' ) ) exit;
 /**
  * Function to get plugin image sizes array
- * 
+ *
  * @package WP Slick Slider and Image Carousel
  * @since 1.2.2
  */
@@ -22,7 +22,7 @@ function wpsisac_get_unique() {
 }
 /**
  * Function to get post featured image
- * 
+ *
  * @package WP Slick Slider and Image Carousel Pro
  * @since 1.2.5
  */
@@ -39,7 +39,7 @@ function wpsisac_get_post_featured_image( $post_id = '', $size = 'full') {
 
 /**
  * Function to get shortcode designs
- * 
+ *
  * @package WP Slick Slider and Image Carousel
  * @since 1.2.5
  */
@@ -50,7 +50,8 @@ function wpsisac_slider_designs() {
         'design-3'  	=> __('Design 3', 'wp-slick-slider-and-image-carousel'),
         'design-4' 		=> __('Design 4', 'wp-slick-slider-and-image-carousel'),
         'design-5' 		=> __('Design 5', 'wp-slick-slider-and-image-carousel'),
-        'design-6' 		=> __('Design 6', 'wp-slick-slider-and-image-carousel'),       
+        'design-6' 		=> __('Design 6', 'wp-slick-slider-and-image-carousel'),
+        'design-tms' 		=> __('Design TMS', 'wp-slick-slider-and-image-carousel'),
 	);
 	return apply_filters('wpsisac_slider_designs', $design_arr );
 }
