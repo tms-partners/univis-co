@@ -11,37 +11,39 @@ remove_action('admin_print_styles', 'print_emoji_styles');
 remove_filter('the_content', 'wpautop');
 
 // タグをリストアップし目次化
-function get_custom_content() { 
-	//本文からh2タグをリストアップ 
-	$content = get_the_content(); 
-	$h2_list = array(); 
- 	preg_match_all('/<h2>(.*?)<\/h2>/', $content, $h2_list); 
+function get_custom_content() {
+	//本文からh2タグをリストアップ
+	$content = get_the_content();
+	$h2_list = array();
+ 	preg_match_all('/<h2>(.*?)<\/h2>/', $content, $h2_list);
 
-	//置換・目次の準備 
-	list($h2_outer, $h2_inner) = $h2_list; 
-	$search = $h2_outer; 
-	$replace = array(); 
-	$li_list = array(); 
+	//置換・目次の準備
+	list($h2_outer, $h2_inner) = $h2_list;
+	$search = $h2_outer;
+	$replace = array();
+	$li_list = array();
 
-	foreach ($h2_inner as $key => $val) { 
-    	$replace[] = sprintf('<h2 class="article_h2 js-scroll" id="link%s">%s</h2>', $key, $val); 
-    	$li_list[] = sprintf('<a href="#link%s"><li>&gt;&nbsp;&nbsp;%s</li></a>', $key, $val); 
-	} 
+	foreach ($h2_inner as $key => $val) {
+    	$replace[] = sprintf('<h2 class="article_h2 js-scroll" id="link%s">%s</h2>', $key, $val);
+    	$li_list[] = sprintf('<a href="#link%s"><li>&gt;&nbsp;&nbsp;%s</li></a>', $key, $val);
+	}
 
-	//目次部分 
-	$nav = '<nav class="article_nav"><ul>' .  implode("\n", $li_list) ."</ul></nav>"; 
+	//目次部分
+	$nav = '<nav class="article_nav"><ul>' .  implode("\n", $li_list) ."</ul></nav>";
 
-	//ショートコードを置換 
-	$url_replace = array( 
-  		//'変更前' => '変更後', 
-    	'[url]' => get_bloginfo('url'), 
-    	'[template_url]' => get_bloginfo('template_url') 
-  	); 
-	$content = str_replace(array_keys($url_replace), $url_replace, $content); 
+	//ショートコードを置換
+	$url_replace = array(
+  		//'変更前' => '変更後',
+    	'[url]' => get_bloginfo('url'),
+    	'[template_url]' => get_bloginfo('template_url')
+  	);
+	$content = str_replace(array_keys($url_replace), $url_replace, $content);
+	//replace wp shortcodes and filters
+  $content = apply_filters( 'the_content', $content );
+  $content = str_replace( ']]>', ']]&gt;', $content );
 
-
-	//リンク用のidを埋め込んだ本文 
-	$body = str_replace($search, $replace, $content); 
+	//リンク用のidを埋め込んだ本文
+	$body = str_replace($search, $replace, $content);
 
 	// 配列に格納し個別出力
 	$consequence = array();
@@ -76,7 +78,7 @@ function breadCrumb() {
 		$content = $content . '<span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><span itemprop="name">' . $cat->cat_name . '</span><meta property="position" content="2"></span>';
 	} elseif (is_single()) {
 		// 投稿ページ
-		
+
 	}
 	$content = $content . '</div>';
 	echo $content;
