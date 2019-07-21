@@ -490,6 +490,14 @@ header {
  		top: 0%;
  		left: 0%;
  	}
+    #tms-service-head-image {
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  #tms-service-head-image img {
+    height: 300px;
+  }
  }
 
 
